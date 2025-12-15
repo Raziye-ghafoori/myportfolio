@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@font-face {
+  font-family: per_font;
+  src: url('/public/font/Samim.eot');
+  src: url('/public/font/Samim.woff2') format('woff2'),
+       url('/public/font/Samim.woff') format('woff'),
+       url('/public/font/Samim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  font-family: per_font;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;}
+
+@theme  {
+  --animate-hover: high 1s ease-in-out ;
+  --animate-start-right : position 1s ease-in;
+  --animate-start-left : opacity 1s ease-in;
+
+
+  @keyframes opacity {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes position {
+    0%{
+      right: -300px;
+    }
+    100%{
+      right:0px
+    }
+  }
+
+  @keyframes high {
+    0%{
+      border-bottom: 1px solid #F1B24A;
+    }
+    100%{
+      border-bottom: 6px solid #F1B24A;
+    }
+  }
+}
+
