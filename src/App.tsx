@@ -91,7 +91,7 @@ function App() {
       <br /><br />
       <section className='flex items-center flex-col md:flex-row justify-between w-[100%] lg:h-[550px] h-[400px] py-[20px]'>
         <div className='flex items-center md:w-[50%] w-[100%] md:mt-[50px] h-[100%] bg-[#9DC88D] md:border-none border-[5px] border-[orange] md:rounded-l-[100px] relative animate-start-right'>
-          <img src="/public/img/IMG_1534.webp" alt="عکس خودم" className='md:w-[95%] w-[85%] mx-[auto] md:mx-[0] h-[90%] md:rounded-l-[100px]' />
+          <img src="/img/IMG_1534.webp" alt="عکس خودم" className='md:w-[95%] w-[85%] mx-[auto] md:mx-[0] h-[90%] md:rounded-l-[100px]' />
         </div>
         <div className='flex flex-col  mx-[50px] animate-start-left '>
           <span className='md:text-[60px] text-[30px] font-bold my-[10px] md:m-[20px]'>راضیه غفوری </span>
@@ -222,14 +222,14 @@ function App() {
       <section className=' mx-[auto] flex flex-col md:pt-[0] pt-[50px]'>
         <span className='p-[20px] text-[50px] cursor-default'>نمونه کار</span>
         <div className='flex justify-around md:flex-row flex-col flex-wrap'>
-          <Portfolio_card img='/public/img/popMusic.webp' imgAlt='عکس سایت اهنگ ها' text=' سایت دیدن موزیک ویدئوهای آهنگ ها همراه با صفحه لاگین ' lang='Html, CSS' link='https://github.com/Raziye-ghafoori/pop-music'></Portfolio_card>
-          <Portfolio_card img='/public/img/sarafi.webp' imgAlt="عکس سایت اطلاعات کشور ها" text=' سایت اطلاعات کشور ها (شامل تعداد جمعیت و مساحت و... ) با قابلیت دارک مود و جستجو' lang='Html, CSS' link='https://github.com/Raziye-ghafoori/project-sarafi'></Portfolio_card>
-          <Portfolio_card img='/public/img/Bio.webp' imgAlt="عکس صفحه اطلاعات شرکت ها" text="صفحه اطلاعات تماس یک شرکت با قابلیت تغییر رنگ صفحه" lang='react , chakra UI , Css , HTML' link='https://github.com/Raziye-ghafoori/Bio_Hami_Team'></Portfolio_card>
-          <Portfolio_card img='/public/img/calculator.webp' imgAlt="عکس ماشین حساب" text="ماشین حساب ساده" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Calculator'></Portfolio_card>
-          <Portfolio_card img='/public/img/digital_clock.webp' imgAlt="عکس ساعت دیجیتال" text="ساعت دیجیتال به همراه تقویم" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Digital-clock'></Portfolio_card>
-          <Portfolio_card img='/public/img/weather.webp' imgAlt="سایت نمایش آب و هوا" text="نمایش آب و هوای یک شهر به همراه نمودار تغییرات آب و هوایی" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Weather'></Portfolio_card>
-          <Portfolio_card img='/public/img/ToDoList.webp' imgAlt="to do list" text="یک سایت to do list ساده برای مدیریت کارها" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/ToDoList'></Portfolio_card>
-          <Portfolio_card img='/public/img/zibook.webp' imgAlt="رزرو انلاین ارایشگاه " text="این سایت یک دمو ساده از یک سایت رزرو انلاین ارایشگاه است" lang='react , next.js , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/zibook'></Portfolio_card>
+          <Portfolio_card img='/img/popMusic.webp' imgAlt='عکس سایت اهنگ ها' text=' سایت دیدن موزیک ویدئوهای آهنگ ها همراه با صفحه لاگین ' lang='Html, CSS' link='https://github.com/Raziye-ghafoori/pop-music'></Portfolio_card>
+          <Portfolio_card img='/img/sarafi.webp' imgAlt="عکس سایت اطلاعات کشور ها" text=' سایت اطلاعات کشور ها (شامل تعداد جمعیت و مساحت و... ) با قابلیت دارک مود و جستجو' lang='Html, CSS' link='https://github.com/Raziye-ghafoori/project-sarafi'></Portfolio_card>
+          <Portfolio_card img='/img/Bio.webp' imgAlt="عکس صفحه اطلاعات شرکت ها" text="صفحه اطلاعات تماس یک شرکت با قابلیت تغییر رنگ صفحه" lang='react , chakra UI , Css , HTML' link='https://github.com/Raziye-ghafoori/Bio_Hami_Team'></Portfolio_card>
+          <Portfolio_card img='/img/calculator.webp' imgAlt="عکس ماشین حساب" text="ماشین حساب ساده" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Calculator'></Portfolio_card>
+          <Portfolio_card img='/img/digital_clock.webp' imgAlt="عکس ساعت دیجیتال" text="ساعت دیجیتال به همراه تقویم" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Digital-clock'></Portfolio_card>
+          <Portfolio_card img='/img/weather.webp' imgAlt="سایت نمایش آب و هوا" text="نمایش آب و هوای یک شهر به همراه نمودار تغییرات آب و هوایی" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/Weather'></Portfolio_card>
+          <Portfolio_card img='/img/ToDoList.webp' imgAlt="to do list" text="یک سایت to do list ساده برای مدیریت کارها" lang='react , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/ToDoList'></Portfolio_card>
+          <Portfolio_card img='/img/zibook.webp' imgAlt="رزرو انلاین ارایشگاه " text="این سایت یک دمو ساده از یک سایت رزرو انلاین ارایشگاه است" lang='react , next.js , js , tailwind , Css , HTML' link='https://github.com/Raziye-ghafoori/zibook'></Portfolio_card>
 
         </div>
       </section>
