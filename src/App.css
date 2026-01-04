@@ -1,10 +1,11 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: per_font;
   src: url('/public/font/Samim.eot');
   src: url('/public/font/Samim.woff2') format('woff2'),
-       url('/public/font/Samim.woff') format('woff'),
-       url('/public/font/Samim.ttf') format('truetype');
+    url('/public/font/Samim.woff') format('woff'),
+    url('/public/font/Samim.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,39 +14,117 @@
   font-family: per_font;
   width: 100%;
   text-align: center;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+  
+}
 
-@theme  {
-  --animate-hover: high 1s ease-in-out ;
-  --animate-start-right : position 1s ease-in;
-  --animate-start-left : opacity 1s ease-in;
+@layer utilities {
+  .animate-view {
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+}
+
+@theme {
+  --animate-hover: high 1s ease-in-out;
+  --animate-fade-up: fadeUp 1s linear ;
+  --animate-fade-in: fadeIn 1s ease-out forwards ;
+  --animate-slide-move: float 3s ease-in-out infinite ;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-typing-blink: 
+        typing 3s steps(16) forwards,
+        blink 1s step-end infinite 3s;
 
 
-  @keyframes opacity {
+  
+  @keyframes fadeUp {
     0%{
       opacity: 0;
+      transform: translateY(40px) scale(0.5);
     }
     100%{
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
       opacity: 1;
     }
   }
 
   @keyframes position {
-    0%{
+    0% {
       right: -300px;
     }
-    100%{
-      right:0px
+
+    100% {
+      right: 0px;
     }
   }
 
   @keyframes high {
-    0%{
-      border-bottom: 1px solid #F1B24A;
+    0% {
+      border-bottom: 1px solid rgb(124, 0, 0);
     }
-    100%{
-      border-bottom: 6px solid #F1B24A;
+
+    100% {
+      border-bottom: 6px solid rgb(124, 0, 0);
     }
+  }
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+  }
+
+  @keyframes move {
+    0%  {
+      transform: translate(0) ;
+    }
+    100% {
+       transform: translate(-70px,-50px) ;
+    }
+  }
+
+   @keyframes typing {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 16.5ch;
+    }
+  }
+@keyframes blink {
+  0%, 100% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: white;
   }
 }
 
+@keyframes float {
+  0% {
+    transform: translate(-70px,-50px) scale(1);
+  }
+  50% {
+    transform: translate(-70px,-60px) scale(1.03);
+  }
+  100% {
+    transform: translate(-70px,-50px) scale(1);
+  }
+}
+
+}
